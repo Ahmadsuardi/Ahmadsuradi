@@ -1,0 +1,9 @@
+//Hari pertama 
+
+ public class Haripertama {
+    public static void main(String[] args) {
+        System.out.println("Ahmad Suardi");
+        System.out.println("Kelas informatika");
+        System.out.println("Hari pertama");
+    }
+}
