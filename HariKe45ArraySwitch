@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class HariKe45ArraySwitch{
+ public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String kontak[][] = {
+            {"Ayam", "*183*0852-3344#"},
+            {"Ikan Tuna", " *0814-9988#"},};
+        System.out.println("1. Ayam\n2. Ikan tuna");
+        System.out.print("pilih : ");
+        int pilihan = sc.nextInt();
+        System.out.println("-----------------------");
+        switch (pilihan) {
+            case 1:
+                System.out.print(" pesan " + kontak[0][0] + " 70 ekor kontak yang di hubungi untuk memesan : " + kontak[0][1]);
+                break;
+            case 2:
+                System.out.print(" pesan " + kontak[1][0] + " 30 Gabus kontak yang di hubungi untuk memesan: " + kontak[1][1]);
+                break;
+            default:
+                System.out.println(" tidak tersedia");
+        }
+        System.out.println("");
+    }
+}
