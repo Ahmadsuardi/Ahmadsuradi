@@ -1,0 +1,18 @@
+public class HariKe47prosedur_fungsi {
+    //prosedur
+    public static void siswa(){
+        String nama = "Farhan";
+        int umur = 18;
+        System.out.println(nama + "-"+umur+"tahun");
+    }
+    //fungsi
+    public static String siswi(){
+        String nama = "Bunga";
+        int umur = 15;
+        return nama+"-"+umur+"tahun";
+    }  
+    public static void main(String[] args) {
+      siswa();
+      System.out.println(siswi());
+    }   
+}
