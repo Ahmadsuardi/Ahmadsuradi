@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Latiahan2 {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner(System.in);
+        long harga, total = 0;
+        double diskon = 0;
+        System.out.println("Harga Rp.500000 Perkarung");
+        harga = 500000;
+        System.out.println("Masukkan jumlah karung :");
+        int beras = masuk.nextInt();
+        if(beras>= 150 && beras < 300){
+            System.out.println("dapat diskon 3%");
+            diskon = 0.03*(harga * beras);
+            long diskonTa = (long)diskon;
+            total = (harga * beras)-diskonTa;
+            System.out.println("Harga yang harus dibayar "+total);
+        }else if (beras >=300){
+            System.out.println("Dapat diskon 7%");
+            diskon = 0.07 * (harga * beras);
+            long diskonTa = (long)diskon;
+            total = (harga * beras)- diskonTa;
+            System.out.println("Harga yang harus dibayar : "+total);
+        }else{
+            System.out.println("Tidak dapat diskon");
+            total = harga * beras;
+            System.out.println("Harga yang harus di bayar :"+total);
+        }         
+    }
+}
