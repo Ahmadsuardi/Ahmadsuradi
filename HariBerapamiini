@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Latihan4 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukan Angka Pertama : ");
+        double Angka1 = scanner.nextDouble();
+        System.out.print("Masukkan angka Kedua : ");
+        double Angka2 = scanner.nextDouble();
+        System.out.print("Pilih operator yang apa yang akan digunakan  (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        if (operator == '+') {
+            System.out.println("Hasil: " + (Angka1 + Angka2));
+        } else if (operator == '-') {
+            System.out.println("Hasil: " + (Angka1 - Angka2));
+        } else if (operator == '*') {
+            System.out.println("Hasil: " + (Angka1 * Angka2));
+        } else if (operator == '/') {
+            if (Angka2 != 0) {
+                System.out.println("Hasil: " + (Angka1 / Angka2));
+            } else {
+                System.out.println("Error:zero!");
+            }
+        } else {
+            System.out.println("Error");
+        }
+    }
+}
