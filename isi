@@ -1,0 +1,12 @@
+package Paket1;
+public class Kucing {
+    public String warna;
+    public double berat;
+    public double tinggi;
+    
+    public void cetak(){
+        System.out.println("warna :"+warna);
+        System.out.println("berat :"+berat);
+        System.out.println("tinggi :"+tinggi);
+    }
+}
