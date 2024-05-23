@@ -1,0 +1,29 @@
+import Paket1.Pisang;
+import Paket2.Ayam;
+
+public class Tes1Latihan {
+    public static void main(String[] args) {
+     Kucing kucingPertama = new Kucing();
+     Kucing kucingKedua =  new Kucing();
+             System.out.println("====================");
+     kucingPertama.warna = "Orange";
+     kucingPertama.tinggi = 1.4;
+     kucingPertama.berat = 24.5;
+     kucingPertama.cetak();
+             System.out.println("====================");
+     Pisang loka1 = new Pisang();
+     loka1.harga = 2.3;
+     loka1.jenisPisang = "Kuning";
+     loka1.jenisPisang = "Pisang raya";
+     loka1.panggil();
+        System.out.println("====================");
+     Ayam manu1 = new Ayam ();
+     manu1.jumlahjari = 10;
+     manu1.makanan = "jagung";
+     manu1.tinggi = 8.0;
+     manu1.warna = "merah";
+     manu1.bunyi = "kokokok";
+     manu1.panggil();
+        System.out.println("SELESI");
+    }
+}
