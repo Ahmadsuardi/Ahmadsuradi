@@ -1,0 +1,35 @@
+package swicthcas;
+import java.util.Scanner;
+public class Swicthcas {
+    public static void main(String[] args) {
+        Scanner Masuk = new Scanner(System.in);
+        int pil, porsi, harga = 0;    
+        System.out.println("Menu Makanan");
+        System.out.println("1. Ikan bakar \n2. Bakso Telur \n3. Ayam DELAMIJOS \n4.Empe Empe ");
+        System.out.println("Pilih: ");
+        pil = Masuk.nextInt();
+        System.out.print("porsi :");
+        porsi = Masuk.nextInt();
+        switch(pil){ 
+            case 1:
+                System.out.println("Ikan bakar(25000/porsi");
+                harga = 25000*porsi;
+                break;
+            case 2:
+                System.out.println("Bakso telur(15000/porsi");
+                harga = 15000*porsi;
+                break;
+            case 3:
+                System.out.println("Ayam DELAMIJOS(13000/porsi");
+                harga = 13000*porsi;
+            case 4:
+                System.out.println("Empe Empe (3000/porsi");
+                 harga = 3000*porsi;
+            default:
+                System.out.println("Salah pilih");
+                break;
+        }
+        System.out.println("Total : Rp. "+harga);
+    }
+}
+ 
