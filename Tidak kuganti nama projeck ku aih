@@ -1,0 +1,21 @@
+package javaapplication36;
+
+import java.util.Scanner;
+
+public class JavaApplication36 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan Angka : ");
+        int number = scanner.nextInt();
+
+        if (number > 0) {
+            System.out.println("Angka positif :");
+        } else if (number < 0) {
+            System.out.println("Angka negatif :");
+        } else {
+            System.out.println("Angka 0");
+        }
+    }
+}
